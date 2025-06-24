@@ -187,3 +187,227 @@ FROM source
 [0m18:17:27.914180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133b7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13cbd55a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13cbd57b0>]}
 [0m18:17:27.914297 [debug] [MainThread]: Flushing usage events
 [0m18:17:28.316098 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:29:52.976934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063a1d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10761bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10761bc50>]}
+
+
+============================== 22:29:52.979358 | 9ff5a887-126f-4981-8ec2-44705a2d3332 ==============================
+[0m22:29:52.979358 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:29:52.979583 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:53.526022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1254169e0>]}
+[0m22:29:53.544938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12529bdf0>]}
+[0m22:29:53.545196 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:29:53.605447 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m22:29:53.640416 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:29:53.640597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126953c50>]}
+[0m22:29:54.062824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1269f67b0>]}
+[0m22:29:54.091995 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m22:29:54.093513 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m22:29:54.104386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b4cbe70>]}
+[0m22:29:54.104565 [info ] [MainThread]: Found 7 models, 19 data tests, 4 sources, 491 macros
+[0m22:29:54.104675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126976c30>]}
+[0m22:29:54.105438 [info ] [MainThread]: 
+[0m22:29:54.105558 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:29:54.105644 [info ] [MainThread]: 
+[0m22:29:54.105803 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:29:54.107258 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_prd-dagen'
+[0m22:29:54.107395 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:29:54.655148 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_prd-dagen, now list_prd-dagen_ecom1)
+[0m22:29:54.655899 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:29:55.206015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b32d250>]}
+[0m22:29:55.206877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:29:55.283005 [debug] [Thread-4 (]: Began running node model.dbt_test7.stg_products
+[0m22:29:55.283297 [debug] [Thread-1 (]: Began running node model.dbt_test7.stg_customers
+[0m22:29:55.283459 [debug] [Thread-3 (]: Began running node model.dbt_test7.stg_orders
+[0m22:29:55.283584 [debug] [Thread-2 (]: Began running node model.dbt_test7.stg_order_items
+[0m22:29:55.283827 [info ] [Thread-4 (]: 4 of 7 START sql view model ecom1.stg_products ................................. [RUN]
+[0m22:29:55.284027 [info ] [Thread-1 (]: 1 of 7 START sql view model ecom1.stg_customers ................................ [RUN]
+[0m22:29:55.284183 [info ] [Thread-3 (]: 3 of 7 START sql view model ecom1.stg_orders ................................... [RUN]
+[0m22:29:55.284335 [info ] [Thread-2 (]: 2 of 7 START sql view model ecom1.stg_order_items .............................. [RUN]
+[0m22:29:55.284574 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_test7.stg_products'
+[0m22:29:55.284713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_prd-dagen_ecom1, now model.dbt_test7.stg_customers)
+[0m22:29:55.284860 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_test7.stg_orders'
+[0m22:29:55.285004 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_test7.stg_order_items'
+[0m22:29:55.285124 [debug] [Thread-4 (]: Began compiling node model.dbt_test7.stg_products
+[0m22:29:55.285235 [debug] [Thread-1 (]: Began compiling node model.dbt_test7.stg_customers
+[0m22:29:55.285338 [debug] [Thread-3 (]: Began compiling node model.dbt_test7.stg_orders
+[0m22:29:55.285440 [debug] [Thread-2 (]: Began compiling node model.dbt_test7.stg_order_items
+[0m22:29:55.288460 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_test7.stg_products"
+[0m22:29:55.289309 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_test7.stg_customers"
+[0m22:29:55.290238 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_test7.stg_orders"
+[0m22:29:55.290944 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_test7.stg_order_items"
+[0m22:29:55.291318 [debug] [Thread-1 (]: Began executing node model.dbt_test7.stg_customers
+[0m22:29:55.291477 [debug] [Thread-4 (]: Began executing node model.dbt_test7.stg_products
+[0m22:29:55.297383 [debug] [Thread-3 (]: Began executing node model.dbt_test7.stg_orders
+[0m22:29:55.302053 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_test7.stg_customers"
+[0m22:29:55.302900 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_test7.stg_products"
+[0m22:29:55.303831 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_test7.stg_orders"
+[0m22:29:55.303970 [debug] [Thread-2 (]: Began executing node model.dbt_test7.stg_order_items
+[0m22:29:55.304854 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_test7.stg_order_items"
+[0m22:29:55.305261 [debug] [Thread-1 (]: On model.dbt_test7.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_test7", "target_name": "dev", "node_id": "model.dbt_test7.stg_customers"} */
+
+
+  create or replace view `prd-dagen`.`ecom1`.`stg_customers`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `prd-dagen`.`ecom1`.`dagen_pipeline_ecompg2bq_ecommerce_customers`
+)
+
+SELECT
+    id AS customer_id,
+    first_name,
+    last_name,
+    email,
+    created_at,
+    updated_at
+FROM source;
+
+
+[0m22:29:55.305430 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:55.305573 [debug] [Thread-2 (]: On model.dbt_test7.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_test7", "target_name": "dev", "node_id": "model.dbt_test7.stg_order_items"} */
+
+
+  create or replace view `prd-dagen`.`ecom1`.`stg_order_items`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `prd-dagen`.`ecom1`.`dagen_pipeline_ecompg2bq_ecommerce_order_items`
+)
+
+SELECT
+    id AS order_item_id,
+    order_id,
+    product_id,
+    quantity,
+    created_at,
+    updated_at
+FROM source;
+
+
+[0m22:29:55.305735 [debug] [Thread-4 (]: On model.dbt_test7.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_test7", "target_name": "dev", "node_id": "model.dbt_test7.stg_products"} */
+
+
+  create or replace view `prd-dagen`.`ecom1`.`stg_products`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `prd-dagen`.`ecom1`.`dagen_pipeline_ecompg2bq_ecommerce_products`
+)
+
+SELECT
+    id AS product_id,
+    name AS product_name,
+    price,
+    created_at,
+    updated_at
+FROM source;
+
+
+[0m22:29:55.305880 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:29:55.306008 [debug] [Thread-3 (]: On model.dbt_test7.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_test7", "target_name": "dev", "node_id": "model.dbt_test7.stg_orders"} */
+
+
+  create or replace view `prd-dagen`.`ecom1`.`stg_orders`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `prd-dagen`.`ecom1`.`dagen_pipeline_ecompg2bq_ecommerce_orders`
+)
+
+SELECT
+    id AS order_id,
+    user_id AS customer_id,
+    status,
+    created_at,
+    updated_at
+FROM source;
+
+
+[0m22:29:55.306138 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:29:55.351295 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:29:56.016272 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:034f97b9-181d-422c-a030-b362e9a76d54&page=queryresults
+[0m22:29:56.059193 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:b11f92c5-2e6a-450d-8d61-5dc5ed8b0d32&page=queryresults
+[0m22:29:56.066497 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:6b4e53a7-675a-4119-9209-eef72b387648&page=queryresults
+[0m22:29:56.072479 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:43e3785c-28df-4cc8-926b-c9f2d3003df6&page=queryresults
+[0m22:29:56.256036 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:034f97b9-181d-422c-a030-b362e9a76d54&page=queryresults
+[0m22:29:56.271394 [debug] [Thread-3 (]: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_orders.sql
+[0m22:29:56.273767 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b78a990>]}
+[0m22:29:56.274452 [error] [Thread-3 (]: 3 of 7 ERROR creating sql view model ecom1.stg_orders .......................... [[31mERROR[0m in 0.99s]
+[0m22:29:56.275011 [debug] [Thread-3 (]: Finished running node model.dbt_test7.stg_orders
+[0m22:29:56.275502 [debug] [Thread-7 (]: Marking all children of 'model.dbt_test7.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_orders.sql.
+[0m22:29:56.277047 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:6b4e53a7-675a-4119-9209-eef72b387648&page=queryresults
+[0m22:29:56.281496 [debug] [Thread-4 (]: Database Error in model stg_products (models/staging/stg_products.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_products.sql
+[0m22:29:56.281809 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b906350>]}
+[0m22:29:56.282214 [error] [Thread-4 (]: 4 of 7 ERROR creating sql view model ecom1.stg_products ........................ [[31mERROR[0m in 1.00s]
+[0m22:29:56.282556 [debug] [Thread-4 (]: Finished running node model.dbt_test7.stg_products
+[0m22:29:56.282894 [debug] [Thread-7 (]: Marking all children of 'model.dbt_test7.stg_products' to be skipped because of status 'error'.  Reason: Database Error in model stg_products (models/staging/stg_products.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_products.sql.
+[0m22:29:56.283287 [debug] [Thread-3 (]: Began running node model.dbt_test7.dim_products
+[0m22:29:56.283533 [info ] [Thread-3 (]: 5 of 7 SKIP relation ecom1.dim_products ........................................ [[33mSKIP[0m]
+[0m22:29:56.283786 [debug] [Thread-3 (]: Finished running node model.dbt_test7.dim_products
+[0m22:29:56.292023 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:b11f92c5-2e6a-450d-8d61-5dc5ed8b0d32&page=queryresults
+[0m22:29:56.295376 [debug] [Thread-2 (]: Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_order_items.sql
+[0m22:29:56.295636 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b4394d0>]}
+[0m22:29:56.295985 [error] [Thread-2 (]: 2 of 7 ERROR creating sql view model ecom1.stg_order_items ..................... [[31mERROR[0m in 1.01s]
+[0m22:29:56.296576 [debug] [Thread-2 (]: Finished running node model.dbt_test7.stg_order_items
+[0m22:29:56.296963 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=prd-dagen&j=bq:US:43e3785c-28df-4cc8-926b-c9f2d3003df6&page=queryresults
+[0m22:29:56.297298 [debug] [Thread-7 (]: Marking all children of 'model.dbt_test7.stg_order_items' to be skipped because of status 'error'.  Reason: Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_order_items.sql.
+[0m22:29:56.298516 [debug] [Thread-4 (]: Began running node model.dbt_test7.fact_orders
+[0m22:29:56.298724 [info ] [Thread-4 (]: 6 of 7 SKIP relation ecom1.fact_orders ......................................... [[33mSKIP[0m]
+[0m22:29:56.298934 [debug] [Thread-4 (]: Finished running node model.dbt_test7.fact_orders
+[0m22:29:56.300989 [debug] [Thread-1 (]: Database Error in model stg_customers (models/staging/stg_customers.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_customers.sql
+[0m22:29:56.301207 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ff5a887-126f-4981-8ec2-44705a2d3332', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b909ef0>]}
+[0m22:29:56.301503 [error] [Thread-1 (]: 1 of 7 ERROR creating sql view model ecom1.stg_customers ....................... [[31mERROR[0m in 1.02s]
+[0m22:29:56.301795 [debug] [Thread-1 (]: Finished running node model.dbt_test7.stg_customers
+[0m22:29:56.302030 [debug] [Thread-7 (]: Marking all children of 'model.dbt_test7.stg_customers' to be skipped because of status 'error'.  Reason: Database Error in model stg_customers (models/staging/stg_customers.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_customers.sql.
+[0m22:29:56.302419 [debug] [Thread-3 (]: Began running node model.dbt_test7.dim_customers
+[0m22:29:56.302653 [info ] [Thread-3 (]: 7 of 7 SKIP relation ecom1.dim_customers ....................................... [[33mSKIP[0m]
+[0m22:29:56.302876 [debug] [Thread-3 (]: Finished running node model.dbt_test7.dim_customers
+[0m22:29:56.303651 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:29:56.356515 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:29:56.356622 [debug] [MainThread]: Connection 'model.dbt_test7.stg_customers' was properly closed.
+[0m22:29:56.356703 [debug] [MainThread]: Connection 'model.dbt_test7.stg_products' was properly closed.
+[0m22:29:56.356782 [debug] [MainThread]: Connection 'model.dbt_test7.stg_orders' was properly closed.
+[0m22:29:56.356861 [debug] [MainThread]: Connection 'model.dbt_test7.stg_order_items' was properly closed.
+[0m22:29:56.356979 [info ] [MainThread]: 
+[0m22:29:56.357085 [info ] [MainThread]: Finished running 3 table models, 4 view models in 0 hours 0 minutes and 2.25 seconds (2.25s).
+[0m22:29:56.357437 [debug] [MainThread]: Command end result
+[0m22:29:56.366046 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m22:29:56.366588 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m22:29:56.368582 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/run_results.json
+[0m22:29:56.368681 [info ] [MainThread]: 
+[0m22:29:56.368798 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m22:29:56.368895 [info ] [MainThread]: 
+[0m22:29:56.369010 [error] [MainThread]:   Database Error in model stg_orders (models/staging/stg_orders.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_orders.sql
+[0m22:29:56.369094 [info ] [MainThread]: 
+[0m22:29:56.369187 [error] [MainThread]:   Database Error in model stg_products (models/staging/stg_products.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_products.sql
+[0m22:29:56.369267 [info ] [MainThread]: 
+[0m22:29:56.369358 [error] [MainThread]:   Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_order_items.sql
+[0m22:29:56.369437 [info ] [MainThread]: 
+[0m22:29:56.369528 [error] [MainThread]:   Database Error in model stg_customers (models/staging/stg_customers.sql)
+  Unrecognized name: id at [11:5]
+  compiled code at target/run/dbt_test7/models/staging/stg_customers.sql
+[0m22:29:56.369609 [info ] [MainThread]: 
+[0m22:29:56.369703 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=3 TOTAL=7
+[0m22:29:56.371970 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.4195929, "process_in_blocks": "0", "process_kernel_time": 0.218913, "process_mem_max_rss": "223412224", "process_out_blocks": "0", "process_user_time": 1.785728}
+[0m22:29:56.372104 [debug] [MainThread]: Command `dbt run` failed at 22:29:56.372076 after 3.42 seconds
+[0m22:29:56.372224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107033b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b9f3b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b9f3b30>]}
+[0m22:29:56.372332 [debug] [MainThread]: Flushing usage events
+[0m22:29:56.786118 [debug] [MainThread]: An error was encountered while trying to flush usage events
