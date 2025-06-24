@@ -1,6 +1,7 @@
 dbt_test7:
   target: dev
   outputs:
+  done in vs
     dev:
       type: bigquery
       method: service-account
