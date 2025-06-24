@@ -5,7 +5,8 @@ profile: dbt_test7
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 macro-paths: ["macros"]
-
+test
+some errors
 models:
   dbt_test7:
     staging:
