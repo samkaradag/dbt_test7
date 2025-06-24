@@ -1,0 +1,54 @@
+[0m18:14:07.408398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104661d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053cbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053cbc50>]}
+
+
+============================== 18:14:07.410910 | 5e7138f6-362e-4b9a-8b2f-41aae438ad60 ==============================
+[0m18:14:07.410910 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:14:07.411167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt compile --models all', 'send_anonymous_usage_stats': 'True'}
+[0m18:14:07.412358 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'default'
+[0m18:14:07.470563 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.08702034, "process_in_blocks": "0", "process_kernel_time": 0.086094, "process_mem_max_rss": "100433920", "process_out_blocks": "0", "process_user_time": 0.445029}
+[0m18:14:07.470827 [debug] [MainThread]: Command `dbt compile` failed at 18:14:07.470779 after 0.09 seconds
+[0m18:14:07.470994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052d7820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053f5250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10524b020>]}
+[0m18:14:07.471161 [debug] [MainThread]: Flushing usage events
+[0m18:14:08.127300 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:14:19.155901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062a1d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c13b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c13c50>]}
+
+
+============================== 18:14:19.157544 | fd75c9b9-2fb6-48d2-8fa8-392888d69f93 ==============================
+[0m18:14:19.157544 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:14:19.157748 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --models all', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:14:19.685753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fd75c9b9-2fb6-48d2-8fa8-392888d69f93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa269e0>]}
+[0m18:14:19.704750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fd75c9b9-2fb6-48d2-8fa8-392888d69f93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f89bdf0>]}
+[0m18:14:19.704988 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:14:19.764461 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:14:19.764838 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:14:19.764966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fd75c9b9-2fb6-48d2-8fa8-392888d69f93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc48250>]}
+[0m18:14:20.092619 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_test7.stg_products' (models/staging/stg_products.sql) depends on a source named 'ecom1.dagen_pipeline_ecompg2bq_ecommerce_products' which was not found
+[0m18:14:20.094443 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.96095324, "process_in_blocks": "0", "process_kernel_time": 0.171117, "process_mem_max_rss": "211714048", "process_out_blocks": "0", "process_user_time": 1.083669}
+[0m18:14:20.094604 [debug] [MainThread]: Command `dbt compile` failed at 18:14:20.094568 after 0.96 seconds
+[0m18:14:20.094742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc9fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc9fa70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c03e70>]}
+[0m18:14:20.094866 [debug] [MainThread]: Flushing usage events
+[0m18:14:20.520584 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:14:43.704233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109a1d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f0fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f0fc50>]}
+
+
+============================== 18:14:43.706241 | ebb3138c-b028-40b6-a293-3a17ba17fd67 ==============================
+[0m18:14:43.706241 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:14:43.706462 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile --models all', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:14:44.063139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ebb3138c-b028-40b6-a293-3a17ba17fd67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1250229e0>]}
+[0m18:14:44.082271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ebb3138c-b028-40b6-a293-3a17ba17fd67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124e9bdf0>]}
+[0m18:14:44.082520 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:14:44.138996 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:14:44.139335 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:14:44.139463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ebb3138c-b028-40b6-a293-3a17ba17fd67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125348250>]}
+[0m18:14:44.461521 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_test7.stg_products' (models/staging/stg_products.sql) depends on a source named 'ecom1.dagen_pipeline_ecompg2bq_ecommerce_products' which was not found
+[0m18:14:44.463446 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.78371215, "process_in_blocks": "0", "process_kernel_time": 0.16658, "process_mem_max_rss": "214335488", "process_out_blocks": "0", "process_user_time": 1.130463}
+[0m18:14:44.463614 [debug] [MainThread]: Command `dbt compile` failed at 18:14:44.463577 after 0.78 seconds
+[0m18:14:44.463775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1253a1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112b3d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f03e70>]}
+[0m18:14:44.463908 [debug] [MainThread]: Flushing usage events
+[0m18:14:44.878594 [debug] [MainThread]: An error was encountered while trying to flush usage events

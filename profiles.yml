@@ -1,0 +1,10 @@
+dbt_test7:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: prd-dagen
+      dataset: ecom1
+      threads: 4
+      keyfile: ./keyfile.json

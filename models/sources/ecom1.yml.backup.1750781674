@@ -1,0 +1,59 @@
+name: ecom1
+database: prd-dagen
+schema: ecom1
+tables:
+- name: dagen_pipeline_ecompg2bq_ecommerce_customers
+  columns:
+  - name: id
+    tests:
+    - unique
+    - not_null
+  - name: first_name
+    tests:
+    - not_null
+  - name: last_name
+    tests:
+    - not_null
+  - name: email
+    tests:
+    - unique
+    - not_null
+- name: dagen_pipeline_ecompg2bq_ecommerce_products
+  columns:
+  - name: id
+    tests:
+    - unique
+    - not_null
+  - name: name
+    tests:
+    - not_null
+  - name: price
+    tests:
+    - not_null
+- name: dagen_pipeline_ecompg2bq_ecommerce_orders
+  columns:
+  - name: id
+    tests:
+    - unique
+    - not_null
+  - name: user_id
+    tests:
+    - not_null
+  - name: status
+    tests:
+    - not_null
+- name: dagen_pipeline_ecompg2bq_ecommerce_order_items
+  columns:
+  - name: id
+    tests:
+    - unique
+    - not_null
+  - name: order_id
+    tests:
+    - not_null
+  - name: product_id
+    tests:
+    - not_null
+  - name: quantity
+    tests:
+    - not_null
