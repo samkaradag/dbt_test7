@@ -5,9 +5,3 @@ profile: dbt_test7
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 macro-paths: ["macros"]
-
-models:
-  dbt_test7:
-    staging:
-      +materialized: view
-    +materialized: table

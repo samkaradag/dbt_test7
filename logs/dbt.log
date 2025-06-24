@@ -52,3 +52,138 @@ Compilation Error
 [0m18:14:44.463775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1253a1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112b3d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f03e70>]}
 [0m18:14:44.463908 [debug] [MainThread]: Flushing usage events
 [0m18:14:44.878594 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:16:29.129236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e99d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112113b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112113c50>]}
+
+
+============================== 18:16:29.131789 | cc72313c-a87c-4df7-940f-61a971c05408 ==============================
+[0m18:16:29.131789 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:16:29.132045 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt compile --models all', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:16:29.638479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc72313c-a87c-4df7-940f-61a971c05408', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1226269e0>]}
+[0m18:16:29.657286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc72313c-a87c-4df7-940f-61a971c05408', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12239bdf0>]}
+[0m18:16:29.657550 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:16:29.718968 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:16:29.719517 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:16:29.719661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cc72313c-a87c-4df7-940f-61a971c05408', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12284c250>]}
+[0m18:16:30.070934 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_test7.stg_products' (models/staging/stg_products.sql) depends on a source named 'ecom1.dagen_pipeline_ecompg2bq_ecommerce_products' which was not found
+[0m18:16:30.073389 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.9677476, "process_in_blocks": "0", "process_kernel_time": 0.188203, "process_mem_max_rss": "212566016", "process_out_blocks": "0", "process_user_time": 1.114208}
+[0m18:16:30.073576 [debug] [MainThread]: Command `dbt compile` failed at 18:16:30.073537 after 0.97 seconds
+[0m18:16:30.073726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1228a1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118b3d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112103e70>]}
+[0m18:16:30.073849 [debug] [MainThread]: Flushing usage events
+[0m18:16:30.501331 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:17:00.290733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106379d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070dfb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070dfc50>]}
+
+
+============================== 18:17:00.293166 | 17a04afb-a54b-4ea3-ad49-5784f5436307 ==============================
+[0m18:17:00.293166 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:17:00.293398 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt compile --models all', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:17:00.751986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '17a04afb-a54b-4ea3-ad49-5784f5436307', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbbe9e0>]}
+[0m18:17:00.771120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '17a04afb-a54b-4ea3-ad49-5784f5436307', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da33df0>]}
+[0m18:17:00.771370 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:17:00.836498 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:17:00.836883 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:17:00.837033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '17a04afb-a54b-4ea3-ad49-5784f5436307', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dde8250>]}
+[0m18:17:01.266093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '17a04afb-a54b-4ea3-ad49-5784f5436307', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da47c50>]}
+[0m18:17:01.296189 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m18:17:01.297845 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m18:17:01.308340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '17a04afb-a54b-4ea3-ad49-5784f5436307', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e247070>]}
+[0m18:17:01.308511 [info ] [MainThread]: Found 7 models, 19 data tests, 4 sources, 491 macros
+[0m18:17:01.308618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '17a04afb-a54b-4ea3-ad49-5784f5436307', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dec81f0>]}
+[0m18:17:01.308855 [warn ] [MainThread]: The selection criterion 'all' does not match any enabled nodes
+[0m18:17:01.309261 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:17:01.309435 [debug] [MainThread]: Command end result
+[0m18:17:01.318396 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m18:17:01.318885 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m18:17:01.319923 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/run_results.json
+[0m18:17:01.322160 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.0560403, "process_in_blocks": "0", "process_kernel_time": 0.191137, "process_mem_max_rss": "218431488", "process_out_blocks": "0", "process_user_time": 1.248189}
+[0m18:17:01.322308 [debug] [MainThread]: Command `dbt compile` succeeded at 18:17:01.322277 after 1.06 seconds
+[0m18:17:01.322439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f7b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e296c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e296a40>]}
+[0m18:17:01.322546 [debug] [MainThread]: Flushing usage events
+[0m18:17:01.728096 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:17:20.271359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa5d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110117b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110117c50>]}
+
+
+============================== 18:17:20.272988 | 6b333980-c4de-47d6-baac-7c267acbdfdf ==============================
+[0m18:17:20.272988 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:17:20.273205 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt compile --models all', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:17:20.623765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b333980-c4de-47d6-baac-7c267acbdfdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117e229e0>]}
+[0m18:17:20.642731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b333980-c4de-47d6-baac-7c267acbdfdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117c9bdf0>]}
+[0m18:17:20.642966 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:17:20.698982 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:17:20.733469 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m18:17:20.733647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6b333980-c4de-47d6-baac-7c267acbdfdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120853c50>]}
+[0m18:17:21.125085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b333980-c4de-47d6-baac-7c267acbdfdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208fa7b0>]}
+[0m18:17:21.154022 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m18:17:21.155366 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m18:17:21.160830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b333980-c4de-47d6-baac-7c267acbdfdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120fe02f0>]}
+[0m18:17:21.161013 [info ] [MainThread]: Found 7 models, 19 data tests, 4 sources, 491 macros
+[0m18:17:21.161133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b333980-c4de-47d6-baac-7c267acbdfdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208a3380>]}
+[0m18:17:21.161398 [warn ] [MainThread]: The selection criterion 'all' does not match any enabled nodes
+[0m18:17:21.161808 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:17:21.161994 [debug] [MainThread]: Command end result
+[0m18:17:21.170278 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m18:17:21.170761 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m18:17:21.171775 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/run_results.json
+[0m18:17:21.173510 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.92536724, "process_in_blocks": "0", "process_kernel_time": 0.165998, "process_mem_max_rss": "220528640", "process_out_blocks": "0", "process_user_time": 1.263589}
+[0m18:17:21.173645 [debug] [MainThread]: Command `dbt compile` succeeded at 18:17:21.173615 after 0.93 seconds
+[0m18:17:21.173774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fb3410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122188f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122189020>]}
+[0m18:17:21.173888 [debug] [MainThread]: Flushing usage events
+[0m18:17:21.588571 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:17:26.691469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118a9d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113517b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113517c50>]}
+
+
+============================== 18:17:26.693188 | aab38c6b-889c-466b-aa7e-92573a4e374e ==============================
+[0m18:17:26.693188 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:17:26.693405 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/logs', 'debug': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --models stg_customers', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:17:27.048641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aab38c6b-889c-466b-aa7e-92573a4e374e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13c72e9e0>]}
+[0m18:17:27.067680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aab38c6b-889c-466b-aa7e-92573a4e374e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13c49bdf0>]}
+[0m18:17:27.067928 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:17:27.123712 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:17:27.165572 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:17:27.165731 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:17:27.180859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aab38c6b-889c-466b-aa7e-92573a4e374e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13c94c550>]}
+[0m18:17:27.210742 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m18:17:27.212028 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m18:17:27.216892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aab38c6b-889c-466b-aa7e-92573a4e374e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13c980230>]}
+[0m18:17:27.217061 [info ] [MainThread]: Found 7 models, 19 data tests, 4 sources, 491 macros
+[0m18:17:27.217172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aab38c6b-889c-466b-aa7e-92573a4e374e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13cbe4bb0>]}
+[0m18:17:27.217801 [info ] [MainThread]: 
+[0m18:17:27.217919 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:17:27.217999 [info ] [MainThread]: 
+[0m18:17:27.218167 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:17:27.219688 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_prd-dagen_ecom1'
+[0m18:17:27.219846 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:17:27.772745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aab38c6b-889c-466b-aa7e-92573a4e374e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13c64f1e0>]}
+[0m18:17:27.773539 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:17:27.849719 [debug] [Thread-1 (]: Began running node model.dbt_test7.stg_customers
+[0m18:17:27.850062 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_prd-dagen_ecom1, now model.dbt_test7.stg_customers)
+[0m18:17:27.850206 [debug] [Thread-1 (]: Began compiling node model.dbt_test7.stg_customers
+[0m18:17:27.856494 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_test7.stg_customers"
+[0m18:17:27.857016 [debug] [Thread-1 (]: Began executing node model.dbt_test7.stg_customers
+[0m18:17:27.857154 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:17:27.900531 [debug] [Thread-1 (]: Finished running node model.dbt_test7.stg_customers
+[0m18:17:27.900984 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:17:27.901103 [debug] [MainThread]: Connection 'model.dbt_test7.stg_customers' was properly closed.
+[0m18:17:27.901307 [debug] [MainThread]: Command end result
+[0m18:17:27.909450 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/manifest.json
+[0m18:17:27.909940 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/semantic_manifest.json
+[0m18:17:27.912026 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test7/target/run_results.json
+[0m18:17:27.912140 [info ] [MainThread]: Compiled node 'stg_customers' is:
+WITH source AS (
+    SELECT * FROM `prd-dagen`.`ecom1`.`dagen_pipeline_ecompg2bq_ecommerce_customers`
+)
+
+SELECT
+    id AS customer_id,
+    first_name,
+    last_name,
+    email,
+    created_at,
+    updated_at
+FROM source
+[0m18:17:27.913923 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.2454567, "process_in_blocks": "0", "process_kernel_time": 0.167253, "process_mem_max_rss": "214712320", "process_out_blocks": "0", "process_user_time": 1.075294}
+[0m18:17:27.914059 [debug] [MainThread]: Command `dbt compile` succeeded at 18:17:27.914029 after 1.25 seconds
+[0m18:17:27.914180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133b7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13cbd55a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13cbd57b0>]}
+[0m18:17:27.914297 [debug] [MainThread]: Flushing usage events
+[0m18:17:28.316098 [debug] [MainThread]: An error was encountered while trying to flush usage events
